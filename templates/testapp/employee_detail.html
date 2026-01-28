@@ -75,9 +75,9 @@
 
             <!-- Buttons -->
             <div class="d-flex gap-2 mt-0">
-                <a href="#"
+                <a href="{% url 'edit_employee' employee.id %}"
                     class="btn btn-warning flex-grow-1 fw-bold text-white">Edit</a>
-                <form action="#" method="POST" class="flex-grow-1">
+                <form action="{% url 'delete_employee' employee.id %}" method="POST" class="flex-grow-1">
                     {% csrf_token %}
                     <button type="submit" class="btn btn-danger w-100 fw-bold text-white">Delete</button>
                 </form>
