@@ -29,7 +29,7 @@
     <!-- 
         MARK: Header 
     -->
-    <header class="text-center pt-5">
+    <header class="text-center pt-3">
         <h1 class="text-primary">Employee Dashboard</h1>
         <!-- <p class="text-muted">Overview of all employees with contact info and designation</p> -->
         <p class="small text-secondary">
@@ -47,8 +47,15 @@
 
         <!-- Section -->
         <section class="card shadow-sm">
-            <div class="card-header bg-primary text-white">
+            <div class="card-header bg-primary text-white  py-2 px-3 d-flex justify-content-between align-items-center">
                 <h2 class="mb-0"><i class="bi bi-people-fill"></i> Employee Details</h2>
+                <!-- Add Employee Button -->
+                 <a href="{% url 'add_employee' %}" class="btn btn-sm btn-primary">
+
+                     <button class="btn btn-sm btn-light fw-bold" data-bs-toggle="modal" data-bs-target="#addEmployeeModal">
+                         + Add Employee
+                        </button>
+                    </a>
             </div>
             <div class="card-body table-responsive">
                 <!-- Table -->

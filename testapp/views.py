@@ -1,5 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from testapp.models import Employee
+from testapp.forms import EmployeeForm
+
 
 # Create your views here.
 def home_view(request):  # home page
@@ -18,3 +20,17 @@ def employee_detail_view(request, id):
     # print("="*40)
     # return HttpResponse(employee) 
     return render(request, 'testapp/employee_detail.html', {'employee': employee})
+
+
+def add_employee_view(request):  # Form view
+    if request.method == 'POST':
+        form = EmployeeForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('/')
+            # return render(request, 'testapp/home.html')
+        
+    else:
+        form = EmployeeForm()
+
+    return render(request, 'testapp/add_employee.html', {'form':form})
