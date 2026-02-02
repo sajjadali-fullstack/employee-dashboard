@@ -5,6 +5,14 @@ This project allows admins to manage employee records including personal details
 
 ---
 
+### Employee Dashboard
+![Employee Dashboard](https://raw.githubusercontent.com/sajjadali-fullstack/employee-dashboard/b05d83bcee5a2c15bc1187b141adea1e13c1c70c/employee-dashboard.png)
+
+### Employee Detail
+![Employee Detail](https://raw.githubusercontent.com/sajjadali-fullstack/employee-dashboard/b05d83bcee5a2c15bc1187b141adea1e13c1c70c/employee-detail.png)
+
+---
+
 ## 🚀 Features
 
 - Add new employees
@@ -20,19 +28,7 @@ This project allows admins to manage employee records including personal details
 
 - Backend: Django (Python)
 - Frontend: HTML, CSS
-- Database: SQLite
+- Database:
 - Other: Django ORM, File Uploads
 
 ---
-
-## 📂 Project Setup
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/sajjadali-fullstack/employee-dashboard.git
-cd employee-dashboard
-
-
-
-![image alt](https://github.com/sajjadali-fullstack/employee-dashboard/blob/6e7bbcd054172434c767b7ae808740065f3226cf/employee-dashboard.png)
-![image alt](https://github.com/sajjadali-fullstack/employee-dashboard/blob/5ed512097141e32ff82d2181dcd34c2f8d0de8a9/employee-detail.png)
